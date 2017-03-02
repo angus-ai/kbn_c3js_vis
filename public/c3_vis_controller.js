@@ -208,6 +208,13 @@ module.controller('KbnC3VisController', function($scope, $element, Private){
 		// Generate and draw
 		$scope.chart = c3.generate(config);
 
+		// Apply color
+		if($scope.vis.params.dark_background) {
+			$(".c3-legend-item text").css("fill", "#a6a6a6");
+		} else {
+			$(".c3-legend-item text").css("fill", "#000000");
+		}
+
 		// resize
 		var elem = $(idchart[0]).closest('div.visualize-chart');
 		var h = elem.height();
