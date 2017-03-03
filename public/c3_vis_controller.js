@@ -138,6 +138,11 @@ module.controller('KbnC3VisController', function($scope, $element, Private){
 		config.data.types = data_types;
 		config.data.colors = data_colors;
 		config.data.labels = $scope.vis.params.dataLabels;
+		if(config.data.labels && $scope.vis.params.label_format)
+			config.data.labels = {
+				format: d3.format($scope.vis.params.label_format)
+			};
+
 		config.legend = {"position": $scope.vis.params.legend_position};
 
 		// timeseries config
