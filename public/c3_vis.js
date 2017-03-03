@@ -38,6 +38,7 @@ function c3VisProvider(Private) {
           hidePoints: false,
           gridlines: false,
           few_x_axis: false,
+          dark_background: false,
           legend_position: "right",
           time_format: "%d-%m-%Y",
           label_format: ".2f",
