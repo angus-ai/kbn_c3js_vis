@@ -40,6 +40,7 @@ function c3VisProvider(Private) {
           few_x_axis: false,
           legend_position: "right",
           time_format: "%d-%m-%Y",
+          label_format: ".2f",
           grouped: false
 
   			},
