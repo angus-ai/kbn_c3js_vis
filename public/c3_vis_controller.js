@@ -220,8 +220,10 @@ module.controller('KbnC3VisController', function($scope, $element, Private){
 		// Apply color
 		if($scope.vis.params.dark_background) {
 			$(".c3-legend-item text").css("fill", "#a6a6a6");
+			$(".c3-axis-x-label").css("fill", "#a6a6a6");
 		} else {
 			$(".c3-legend-item text").css("fill", "#000000");
+			$(".c3-axis-x-label").css("fill", "#000000");
 		}
 
 		// resize
